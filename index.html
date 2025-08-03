@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHDEVSEC Hacking Tools - Ferramentas Profissionais de Cibersegurança</title>
+    <meta name="description" content="Descubra as ferramentas mais avançadas de hacking ético. ShadowPort, CyberScan e muito mais. Ferramentas gratuitas e premium para profissionais de cibersegurança.">
+    <meta name="keywords" content="hacking tools, ferramentas hacking, cybersecurity, pentest, ethical hacking, chdevsec">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CHDEVSEC Hacking Tools - Ferramentas Profissionais">
+    <meta property="og:description" content="Ferramentas avançadas de hacking ético para profissionais de cibersegurança">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💀</text></svg>">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>CHDEVSEC</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#tools">Tools</a>
+                <a href="#stats">Stats</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">
+                    HACKING <span class="highlight">TOOLS</span>
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    Ferramentas profissionais de cibersegurança para hackers éticos.
+                    Explore nosso arsenal de tools gratuitas e premium para pentest,
+                    red team e análise de vulnerabilidades.
+                </p>
+                
+                <!-- New Tool Highlight -->
+                <div class="new-tool-highlight">
+                    <div class="highlight-badge">🔥 LANÇAMENTO</div>
+                    <div class="highlight-content">
+                        <h3 class="highlight-title">Recon Pro v2.0</h3>
+                        <p class="highlight-desc">FRAMEWORK COMPLETO DE AUTOMAÇÃO</p>
+                        <div class="highlight-stats">
+                            <span class="stat">⚡ AUTOMATED RECON</span>
+                            <span class="stat">🎯 MULTI-ENGINE</span>
+                            <span class="stat">🆓 GRÁTIS</span>
+                        </div>
+                    </div>
+                    <div class="highlight-action">
+                        <a href="#tools" class="highlight-btn smooth-scroll">
+                            <i class="fas fa-download"></i>
+                            BAIXAR AGORA
+                        </a>
+                        <button class="highlight-btn-secondary" onclick="openVideoModal('reconpro')">
+                            <i class="fas fa-play"></i>
+                            VER DEMO
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fade-in">
+                    <a href="#tools" class="btn btn-demo">
+                        <i class="fas fa-play"></i>
+                        Explorar Tools
+                    </a>
+                </div>
+            </div>
+            <div class="terminal-showcase fade-in">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <div class="terminal-title">hacking_tools.sh</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">root@chdevsec:~#</span>
+                        <span class="command">./shadowport --scan target.com</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output">[+] Starting ShadowPort scan...</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output">[+] Ports found: 22, 80, 443, 8080</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output">[+] Vulnerabilities: 3 critical found</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">root@chdevsec:~#</span>
+                        <span class="command">./cyberscan --web target.com</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output">[+] Web scan completed successfully</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">root@chdevsec:~#</span>
+                        <span class="cursor">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title fade-in">NOSSO ARSENAL</h2>
+            <p class="section-subtitle fade-in">
+                Ferramentas desenvolvidas por hackers, para hackers
+            </p>
+
+            <div class="tools-grid">
+                <!-- ShadowPort Tool -->
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>ShadowPort</h3>
+                            <span class="tool-status status-free">Free</span>
+                        </div>
+                    </div>
+                    <p class="tool-description">
+                        Scanner de rede profissional para reconnaissance avançado e enumeração 
+                        de portas. Multi-protocolo com capacidades stealth e evasão de firewall.
+                    </p>
+                    <ul class="tool-features">
+                        <li>TCP, UDP, SYN stealth scanning</li>
+                        <li>Service fingerprinting & banner grab</li>
+                        <li>DNS enumeration & subdomain discovery</li>
+                        <li>SSH brute force com rate limiting</li>
+                        <li>Relatórios JSON/XML/CSV/TXT</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn btn-demo" onclick="openVideoModal('shadowport')">
+                            <i class="fas fa-play"></i>
+                            Demo
+                        </button>
+                        <a href="https://github.com/CHDevSec/ShadowPort" class="btn btn-download" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DirBusterPro Tool -->
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>DirBusterPro</h3>
+                            <span class="tool-status status-free">Free</span>
+                        </div>
+                    </div>
+                    <p class="tool-description">
+                        Directory buster profissional para descoberta de diretórios e arquivos 
+                        ocultos. Multi-threaded com wordlists personalizáveis e filtros avançados.
+                    </p>
+                    <ul class="tool-features">
+                        <li>Multi-threaded high-speed scanning</li>
+                        <li>Custom wordlists & extensions</li>
+                        <li>Status code filtering</li>
+                        <li>Recursive directory search</li>
+                        <li>Progress monitoring real-time</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn btn-demo" onclick="openVideoModal('dirbusterpro')">
+                            <i class="fas fa-play"></i>
+                            Demo
+                        </button>
+                        <a href="https://github.com/CHDevSec/DirBusterPro" class="btn btn-download" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BreachHunter Tool -->
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>BreachHunter</h3>
+                            <span class="tool-status status-free">Free</span>
+                        </div>
+                    </div>
+                    <p class="tool-description">
+                        🔥 Caçador de vazamentos profissional! Monitora breaches em tempo real e 
+                        analisa dados expostos. Usado por threat hunters para incident response.
+                    </p>
+                    <ul class="tool-features">
+                        <li>Real-time breach monitoring</li>
+                        <li>Data leak analysis engine</li>
+                        <li>Threat intelligence integration</li>
+                        <li>OSINT automation framework</li>
+                        <li>Incident response workflows</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn btn-demo" onclick="openVideoModal('breachhunter')">
+                            <i class="fas fa-play"></i>
+                            Demo
+                        </button>
+                        <a href="https://github.com/CHDevSec/BreachHunter" class="btn btn-download" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NetRecon Tool -->
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>Recon Pro v2.0</h3>
+                            <span class="tool-status status-free">Free</span>
+                            <span class="tool-status status-new">New</span>
+                        </div>
+                    </div>
+                    <p class="tool-description">
+                        🚀 NOVA VERSÃO! Framework de automação para reconnaissance. 
+                        Integra múltiplas ferramentas de OSINT e enumeration em um só lugar.
+                    </p>
+                    <ul class="tool-features">
+                        <li>Automated reconnaissance</li>
+                        <li>Subdomain enumeration</li>
+                        <li>Port scanning integration</li>
+                        <li>OSINT data collection</li>
+                        <li>Comprehensive reporting</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn btn-demo" onclick="openVideoModal('reconpro')">
+                            <i class="fas fa-play"></i>
+                            Demo
+                        </button>
+                        <a href="https://github.com/CHDevSec/Recon_pro_v2" class="btn btn-download" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recon Basic Tool -->
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-binoculars"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>Recon Basic</h3>
+                            <span class="tool-status status-free">Free</span>
+                        </div>
+                    </div>
+                    <p class="tool-description">
+                        🔍 Reconnaissance básico e eficiente! Ferramenta essencial para 
+                        começar qualquer pentest. Simples, rápida e com resultados objetivos.
+                    </p>
+                    <ul class="tool-features">
+                        <li>Basic reconnaissance automation</li>
+                        <li>Target information gathering</li>
+                        <li>Simple and fast execution</li>
+                        <li>Essential pentest starter</li>
+                        <li>Lightweight & portable</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn btn-demo" onclick="openVideoModal('reconbasic')">
+                            <i class="fas fa-play"></i>
+                            Demo
+                        </button>
+                        <a href="https://github.com/CHDevSec/recon_basic" class="btn btn-download" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tux-Hacking Tool -->
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>Tux-Hacking</h3>
+                            <span class="tool-status status-free">Free</span>
+                            <span class="tool-status status-new">New</span>
+                        </div>
+                    </div>
+                    <p class="tool-description">
+                        🐧 Framework completo para hacking em ambientes Linux! Suite de ferramentas 
+                        para pentest e exploração em sistemas Unix-like. Tux power unleashed!
+                    </p>
+                    <ul class="tool-features">
+                        <li>Linux exploitation framework</li>
+                        <li>Privilege escalation tools</li>
+                        <li>System enumeration suite</li>
+                        <li>Post-exploitation modules</li>
+                        <li>Persistence mechanisms</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn btn-demo" onclick="openVideoModal('tuxhacking')">
+                            <i class="fas fa-play"></i>
+                            Demo
+                        </button>
+                        <a href="https://github.com/CHDevSec/Tux-Hacking" class="btn btn-download" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ScannBanner Tool -->
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>ScannBanner</h3>
+                            <span class="tool-status status-coming">Em Breve</span>
+                        </div>
+                    </div>
+                    <p class="tool-description">
+                        🏴 Scanner avançado de banners e fingerprinting de serviços. 
+                        Identifica versões, tecnologias e configurações de serviços de rede.
+                    </p>
+                    <ul class="tool-features">
+                        <li>Banner grabbing avançado</li>
+                        <li>Service fingerprinting</li>
+                        <li>Version detection engine</li>
+                        <li>Technology stack analysis</li>
+                        <li>Custom signature database</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn btn-disabled" disabled>
+                            <i class="fas fa-clock"></i>
+                            Em Desenvolvimento
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PayloadSmith Tool -->
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>PayloadSmith</h3>
+                            <span class="tool-status status-coming">Em Breve</span>
+                        </div>
+                    </div>
+                    <p class="tool-description">
+                        🔨 Gerador de payloads profissional para web bugs e pentest! 
+                        Cria payloads customizados para XSS, SQLi, RCE e outras vulnerabilidades.
+                    </p>
+                    <ul class="tool-features">
+                        <li>XSS payload generator</li>
+                        <li>SQL injection crafting</li>
+                        <li>RCE payload builder</li>
+                        <li>Web bug templates</li>
+                        <li>Custom encoding options</li>
+                    </ul>
+                    <div class="tool-actions">
+                        <button class="btn btn-disabled" disabled>
+                            <i class="fas fa-clock"></i>
+                            Em Desenvolvimento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Ferramentas</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number">2K</span>
+                    <span class="stat-label">Downloads</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Eficiência</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Disponível</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CHDEVSEC</h3>
+                    <p>Desenvolvendo o futuro da cibersegurança com ferramentas inovadoras e éticas.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://github.com/CHDevSec" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.instagram.com/chdevsec/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="mailto:contato@chdevsec.com"><i class="fas fa-envelope"></i> Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CHDEVSEC. Todos os direitos reservados. Use com responsabilidade.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Demo da Ferramenta</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="video-container">
+                    <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <p id="modal-description" style="color: var(--text-accent); font-family: var(--font-mono);"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
