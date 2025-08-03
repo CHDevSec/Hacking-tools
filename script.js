@@ -81,33 +81,33 @@ class VideoModal {
         this.videos = {
             shadowport: {
                 title: 'ShadowPort - Scanner de Portas Avançado',
-                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Substitua pela URL real
-                description: 'Veja como usar o ShadowPort para identificar portas abertas, serviços e vulnerabilidades em sistemas remotos.'
+                url: '', // Sem vídeo por enquanto
+                description: 'Demonstração em breve. ShadowPort para identificar portas abertas, serviços e vulnerabilidades em sistemas remotos.'
             },
             dirbusterpro: {
                 title: 'DirBusterPro - Directory Buster Profissional',
-                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Substitua pela URL real
-                description: 'Demonstração do DirBusterPro para descoberta de diretórios e arquivos ocultos em servidores web.'
+                url: '', // Sem vídeo por enquanto
+                description: 'Demonstração em breve. DirBusterPro para descoberta de diretórios e arquivos ocultos em servidores web.'
             },
             breachhunter: {
                 title: 'BreachHunter - Caçador de Vazamentos',
-                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Substitua pela URL real
-                description: 'Aprenda a usar o BreachHunter para monitorar breaches em tempo real e analisar dados expostos.'
+                url: '', // Sem vídeo por enquanto
+                description: 'Demonstração em breve. BreachHunter para monitorar breaches em tempo real e analisar dados expostos.'
             },
             reconpro: {
                 title: 'Recon Pro v2.0 - Framework de Automação',
-                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Substitua pela URL real
-                description: 'Veja como o Recon Pro v2.0 automatiza reconnaissance integrando múltiplas ferramentas OSINT.'
+                url: '', // Sem vídeo por enquanto
+                description: 'Demonstração em breve. Recon Pro v2.0 automatiza reconnaissance integrando múltiplas ferramentas OSINT.'
             },
             reconbasic: {
                 title: 'recon_basic - Reconnaissance Básico',
-                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Substitua pela URL real
-                description: 'Demonstração das funcionalidades básicas de reconnaissance com recon_basic.'
+                url: '', // Sem vídeo por enquanto
+                description: 'Demonstração em breve. Funcionalidades básicas de reconnaissance com recon_basic.'
             },
             tuxhacking: {
                 title: 'Tux-Hacking - Framework Linux',
-                url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Substitua pela URL real
-                description: 'Framework completo para hacking em ambientes Linux. Veja ferramentas de pentest e exploração Unix.'
+                url: '', // Sem vídeo por enquanto
+                description: 'Demonstração em breve. Framework completo para hacking em ambientes Linux e ferramentas de pentest Unix.'
             }
         };
 
@@ -133,7 +133,12 @@ class VideoModal {
         const video = this.videos[toolName];
         if (video) {
             this.modalTitle.textContent = video.title;
-            this.modalVideo.src = video.url;
+            if (video.url) {
+                this.modalVideo.src = video.url;
+                this.modalVideo.style.display = 'block';
+            } else {
+                this.modalVideo.style.display = 'none';
+            }
             this.modalDescription.textContent = video.description;
             this.modal.style.display = 'block';
             document.body.style.overflow = 'hidden';
